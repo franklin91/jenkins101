@@ -2,9 +2,9 @@
 pipeline {
   agent any
   stages {
-  stage('Example') {
+  stage('Display IP') {
   steps { 
-  echo 'Hello World'
+  sh 'curl http://ipinfo.io/ip'
   }
   }
   }
